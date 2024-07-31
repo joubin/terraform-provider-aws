@@ -143,6 +143,12 @@ func (p *servicePackage) SDKDataSources(ctx context.Context) []*types.ServicePac
 			TypeName: "aws_ebs_default_kms_key",
 			Name:     "EBS Default KMS Key",
 		},
+
+		{
+			Factory:  dataSourceSubnetIpv4CIDRReservations,
+			TypeName: "aws_ec2_subnet_cidr_reservations",
+			Name:     "Subnet CIDR Reservations",
+		},
 		{
 			Factory:  dataSourceEBSEncryptionByDefault,
 			TypeName: "aws_ebs_encryption_by_default",
