@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
-// @SDKDataSource("aws_ec2_subnet_cidr_reservations", name="Subnet CIDR Reservations")
+// @SDKDataSource("aws_ec2_subnet_ipv4_cidr_reservations", name="Subnet CIDR Reservations")
 func dataSourceSubnetIpv4CIDRReservations() *schema.Resource {
 	return &schema.Resource{
 		ReadWithoutTimeout: dataSourceSubnetIpv4CIDRReservationsRead,

@@ -146,7 +146,7 @@ func (p *servicePackage) SDKDataSources(ctx context.Context) []*types.ServicePac
 
 		{
 			Factory:  dataSourceSubnetIpv4CIDRReservations,
-			TypeName: "aws_ec2_subnet_cidr_reservations",
+			TypeName: "aws_ec2_subnet_ipv4_cidr_reservations",
 			Name:     "Subnet CIDR Reservations",
 		},
 		{
